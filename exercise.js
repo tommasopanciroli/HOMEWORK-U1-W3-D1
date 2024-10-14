@@ -56,15 +56,13 @@ console.log(esercizio4(numbers))
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
-const esercizio5 = function () {
-    let sum = 0
-    numbers.reduce((num) => {
-      sum += num
-    })
-    return sum
-  }
-  
-  console.log(esercizio4(numbers))
+let sum2 = 0
+
+numbers.reduce((acc, num) => {
+  sum2 += num
+}, 0)
+
+console.log(sum2)
 
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
