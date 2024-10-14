@@ -36,18 +36,35 @@ const esercizio3 = numbers.filter((num) => {
   return num % 2 === 0
 })
 
-console.log(esercizio3);
-
+console.log(esercizio3)
 
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+const esercizio4 = function () {
+  let sum = 0
+  numbers.forEach((num) => {
+    sum += num
+  })
+  return sum
+}
 
+console.log(esercizio4(numbers))
 
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+
+const esercizio5 = function () {
+    let sum = 0
+    numbers.reduce((num) => {
+      sum += num
+    })
+    return sum
+  }
+  
+  console.log(esercizio4(numbers))
 
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
